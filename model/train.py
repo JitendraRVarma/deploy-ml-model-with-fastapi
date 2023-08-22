@@ -68,7 +68,7 @@ def train(data: pd.DataFrame = None):
     cv_scores = cross_val_score(
         pipeline, x_data, y_data, cv=3, scoring=auc_scorer
     )  # cross Validation
-    logger.info("Cross-validation scores: %s", cv_scores)
+    logger.info(f"Cross-validation scores: {cv_scores}")
     logger.info("Saving assets")
 
     # fit model on entire data

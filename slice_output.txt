@@ -1,0 +1,176 @@
+Metrics for education =  Bachelors:
+              precision    recall  f1-score   support
+
+       <=50K       0.74      0.55      0.63      3134
+        >50K       0.53      0.73      0.62      2221
+
+    accuracy                           0.62      5355
+   macro avg       0.64      0.64      0.62      5355
+weighted avg       0.66      0.62      0.63      5355
+
+==================================================
+Metrics for education =  HS-grad:
+              precision    recall  f1-score   support
+
+       <=50K       0.90      0.52      0.66      8826
+        >50K       0.22      0.71      0.34      1675
+
+    accuracy                           0.55     10501
+   macro avg       0.56      0.62      0.50     10501
+weighted avg       0.80      0.55      0.61     10501
+
+==================================================
+Metrics for education =  11th:
+              precision    recall  f1-score   support
+
+       <=50K       0.96      0.81      0.88      1115
+        >50K       0.11      0.42      0.17        60
+
+    accuracy                           0.79      1175
+   macro avg       0.54      0.62      0.53      1175
+weighted avg       0.92      0.79      0.85      1175
+
+==================================================
+Metrics for education =  Masters:
+              precision    recall  f1-score   support
+
+       <=50K       0.58      0.59      0.58       764
+        >50K       0.67      0.65      0.66       959
+
+    accuracy                           0.62      1723
+   macro avg       0.62      0.62      0.62      1723
+weighted avg       0.63      0.62      0.62      1723
+
+==================================================
+Metrics for education =  9th:
+              precision    recall  f1-score   support
+
+       <=50K       0.96      0.79      0.87       487
+        >50K       0.08      0.33      0.13        27
+
+    accuracy                           0.77       514
+   macro avg       0.52      0.56      0.50       514
+weighted avg       0.91      0.77      0.83       514
+
+==================================================
+Metrics for education =  Some-college:
+              precision    recall  f1-score   support
+
+       <=50K       0.86      0.73      0.79      5904
+        >50K       0.31      0.51      0.39      1387
+
+    accuracy                           0.69      7291
+   macro avg       0.59      0.62      0.59      7291
+weighted avg       0.76      0.69      0.72      7291
+
+==================================================
+Metrics for education =  Assoc-acdm:
+              precision    recall  f1-score   support
+
+       <=50K       0.81      0.79      0.80       802
+        >50K       0.42      0.45      0.43       265
+
+    accuracy                           0.71      1067
+   macro avg       0.61      0.62      0.62      1067
+weighted avg       0.71      0.71      0.71      1067
+
+==================================================
+Metrics for education =  Assoc-voc:
+              precision    recall  f1-score   support
+
+       <=50K       0.80      0.76      0.78      1021
+        >50K       0.40      0.45      0.42       361
+
+    accuracy                           0.68      1382
+   macro avg       0.60      0.60      0.60      1382
+weighted avg       0.69      0.68      0.68      1382
+
+==================================================
+Metrics for education =  7th-8th:
+              precision    recall  f1-score   support
+
+       <=50K       0.95      0.80      0.87       606
+        >50K       0.11      0.38      0.17        40
+
+    accuracy                           0.77       646
+   macro avg       0.53      0.59      0.52       646
+weighted avg       0.90      0.77      0.82       646
+
+==================================================
+Metrics for education =  Doctorate:
+              precision    recall  f1-score   support
+
+       <=50K       0.35      0.50      0.41       107
+        >50K       0.79      0.68      0.73       306
+
+    accuracy                           0.63       413
+   macro avg       0.57      0.59      0.57       413
+weighted avg       0.68      0.63      0.65       413
+
+==================================================
+Metrics for education =  Prof-school:
+              precision    recall  f1-score   support
+
+       <=50K       0.52      0.56      0.54       153
+        >50K       0.84      0.81      0.82       423
+
+    accuracy                           0.74       576
+   macro avg       0.68      0.69      0.68       576
+weighted avg       0.75      0.74      0.75       576
+
+==================================================
+Metrics for education =  5th-6th:
+              precision    recall  f1-score   support
+
+       <=50K       0.97      0.91      0.93       317
+        >50K       0.17      0.38      0.23        16
+
+    accuracy                           0.88       333
+   macro avg       0.57      0.64      0.58       333
+weighted avg       0.93      0.88      0.90       333
+
+==================================================
+Metrics for education =  10th:
+              precision    recall  f1-score   support
+
+       <=50K       0.95      0.80      0.87       871
+        >50K       0.11      0.35      0.17        62
+
+    accuracy                           0.77       933
+   macro avg       0.53      0.58      0.52       933
+weighted avg       0.89      0.77      0.82       933
+
+==================================================
+Metrics for education =  1st-4th:
+              precision    recall  f1-score   support
+
+       <=50K       0.96      0.94      0.95       162
+        >50K       0.00      0.00      0.00         6
+
+    accuracy                           0.91       168
+   macro avg       0.48      0.47      0.48       168
+weighted avg       0.93      0.91      0.92       168
+
+==================================================
+Metrics for education =  Preschool:
+              precision    recall  f1-score   support
+
+       <=50K       1.00      0.94      0.97        51
+        >50K       0.00      0.00      0.00         0
+
+    accuracy                           0.94        51
+   macro avg       0.50      0.47      0.48        51
+weighted avg       1.00      0.94      0.97        51
+
+==================================================
+Metrics for education =  12th:
+              precision    recall  f1-score   support
+
+       <=50K       0.95      0.80      0.87       400
+        >50K       0.16      0.45      0.23        33
+
+    accuracy                           0.77       433
+   macro avg       0.55      0.63      0.55       433
+weighted avg       0.89      0.77      0.82       433
+
+==================================================
