@@ -1,0 +1,6 @@
+[core]
+    remote = local
+['remote "myremote"']
+    url = /Users/Jitendra_Varma/Downloads/dvc
+['remote "local"']
+    url = /path/to/remote/storage

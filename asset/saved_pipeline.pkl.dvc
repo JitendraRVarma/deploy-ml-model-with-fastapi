@@ -1,0 +1,5 @@
+outs:
+- md5: 217903f6e470ad16d63862fc80d3d51a
+  size: 76300422
+  hash: md5
+  path: saved_pipeline.pkl
