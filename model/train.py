@@ -65,7 +65,9 @@ def train(data: pd.DataFrame = None):
     pipeline = CustomDataPipeline(categorical_columns, target_column)
 
     # Perform cross-validation
-    cv_scores = cross_val_score(pipeline, x_data, y_data, 3, auc_scorer)
+    cv_scores = cross_val_score(
+        pipeline, x_data, y_data, cv=3, scoring=auc_scorer
+    )  # cross Validation
     logger.info("Cross-validation scores: %s", cv_scores)
     logger.info("Saving assets")
 
