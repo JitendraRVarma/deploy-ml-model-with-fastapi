@@ -4,3 +4,5 @@
     url = /Users/Jitendra_Varma/Downloads/dvc
 ['remote "local"']
     url = /path/to/remote/storage
+['remote "local_remote"']
+    url = /Users/Jitendra_Varma/Downloads/remote
