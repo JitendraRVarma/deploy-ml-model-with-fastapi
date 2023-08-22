@@ -1,5 +1,5 @@
 """
-Test script for testing the model's functions: preprocess_data, train, and predict.
+Test script for testing the model module
 """
 
 import numpy as np
@@ -163,7 +163,7 @@ def test_predict(test_df: pd.DataFrame):
     actual_predict = predict(test_df.drop(" salary", axis=1))
 
     # Expected predictions after inference
-    expected_predict = np.array([" <=50K", " >50K", " <=50K", " >50K", " <=50K"])
+    expected = np.array([" <=50K", " >50K", " <=50K", " >50K", " <=50K"])
 
     # Assert that the actual predictions match the expected predictions
-    assert np.array_equal(actual_predict, expected_predict)
+    assert np.array_equal(actual_predict, expected)

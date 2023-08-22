@@ -19,7 +19,8 @@ ROOT_DIR = Path(__file__).resolve().parent.parent
 
 def preprocess_data(data: pd.DataFrame) -> tuple:
     """
-    Preprocess the data by splitting it into features and labels, and performing label encoding.
+    Preprocess the data by splitting it into
+    features and labels, and performing label encoding.
 
     Args:
         data (pd.DataFrame): The input data.
@@ -64,7 +65,7 @@ def train(data: pd.DataFrame = None):
     pipeline = CustomDataPipeline(categorical_columns, target_column)
 
     # Perform cross-validation
-    cv_scores = cross_val_score(pipeline, x_data, y_data, cv=3, scoring=auc_scorer)
+    cv_scores = cross_val_score(pipeline, x_data, y_data, 3, auc_scorer)
     logger.info("Cross-validation scores: %s", cv_scores)
     logger.info("Saving assets")
 
