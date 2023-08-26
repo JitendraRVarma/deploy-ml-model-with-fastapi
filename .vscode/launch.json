@@ -1,0 +1,25 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug FastAPI",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/api/main.py", // Adjust the path to your main.py
+            "args": [
+                "uvicorn",
+                "api.main:app",
+                "--host",
+                "127.0.0.1",
+                "--port",
+                "8000"
+            ],
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}" // Add your project root to PYTHONPATH
+            },
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}",
+            "stopOnEntry": false
+        }
+    ]
+}
