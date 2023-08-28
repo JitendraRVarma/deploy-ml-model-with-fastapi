@@ -42,6 +42,35 @@ class InputItem(BaseModel):
     hours_per_week: int
     native_country: str
 
+    model_config = {
+        "json_schema_extra": {
+            "examples": [
+                {
+                    "age": 20,
+                    "workclass": "Private",
+                    "fnlgt": 44064,
+                    "education": "Some-college",
+                    "education_num": 10,
+                    "marital_status": "Never-married",
+                    "occupation": "Prof-specialty",
+                    "relationship": "Own-child",
+                    "race": "White",
+                    "sex": "Male",
+                    "capital_gain": 0,
+                    "capital_loss": 0,
+                    "hours_per_week": 25,
+                    "native_country": "United-States",
+                }
+            ]
+        }
+    }
+
+
+@app.put("/items/{item_id}")
+async def update_item(item_id: int, item: InputItem):
+    results = {"item_id": item_id, "item": item}
+    return results
+
 
 class Item(BaseModel):
     """List of input items"""
