@@ -47,6 +47,7 @@ class InputItem(BaseModel):
 async def update_item(
     item_id: int,
     item: InputItem = Body(
+        ...,
         examples=[
             {
                 "age": 20,
