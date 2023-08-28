@@ -17,9 +17,10 @@ from typing import List
 
 import pandas as pd
 import uvicorn
-from fastapi import FastAPI
+from fastapi import Body, FastAPI
 from model.inference import predict
 from pydantic import BaseModel
+from typing_extensions import Annotated
 
 app = FastAPI()
 
@@ -42,9 +43,14 @@ class InputItem(BaseModel):
     hours_per_week: int
     native_country: str
 
-    model_config = {
-        "json_schema_extra": {
-            "examples": [
+
+@app.put("/items/{item_id}")
+async def update_item(
+    item_id: int,
+    item: Annotated[
+        InputItem,
+        Body(
+            examples=[
                 {
                     "age": 20,
                     "workclass": "Private",
@@ -61,13 +67,10 @@ class InputItem(BaseModel):
                     "hours_per_week": 25,
                     "native_country": "United-States",
                 }
-            ]
-        }
-    }
-
-
-@app.put("/items/{item_id}")
-async def update_item(item_id: int, item: InputItem):
+            ],
+        ),
+    ],
+):
     results = {"item_id": item_id, "item": item}
     return results
 
