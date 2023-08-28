@@ -129,6 +129,7 @@ def test_preprocess_data(test_df: pd.DataFrame):
     tm.assert_series_equal(actual_df["salary"], expected_salary)
 
 
+@pytest.mark.filterwarnings("ignore::UserWarning")
 def test_train(test_df: pd.DataFrame):
     """
     Test function for train.

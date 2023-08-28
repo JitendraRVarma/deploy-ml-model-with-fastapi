@@ -47,29 +47,26 @@ class InputItem(BaseModel):
 @app.put("/items/{item_id}")
 async def update_item(
     item_id: int,
-    item: Annotated[
-        InputItem,
-        Body(
-            examples=[
-                {
-                    "age": 20,
-                    "workclass": "Private",
-                    "fnlgt": 44064,
-                    "education": "Some-college",
-                    "education_num": 10,
-                    "marital_status": "Never-married",
-                    "occupation": "Prof-specialty",
-                    "relationship": "Own-child",
-                    "race": "White",
-                    "sex": "Male",
-                    "capital_gain": 0,
-                    "capital_loss": 0,
-                    "hours_per_week": 25,
-                    "native_country": "United-States",
-                }
-            ],
-        ),
-    ],
+    item: InputItem = Body(
+        examples=[
+            {
+                "age": 20,
+                "workclass": "Private",
+                "fnlgt": 44064,
+                "education": "Some-college",
+                "education_num": 10,
+                "marital_status": "Never-married",
+                "occupation": "Prof-specialty",
+                "relationship": "Own-child",
+                "race": "White",
+                "sex": "Male",
+                "capital_gain": 0,
+                "capital_loss": 0,
+                "hours_per_week": 25,
+                "native_country": "United-States",
+            }
+        ],
+    ),
 ):
     results = {"item_id": item_id, "item": item}
     return results
@@ -98,7 +95,7 @@ async def predict_data(received_data: Item):
     Returns:
         dict: Predicted salaries.
     """
-    input_item = received_data.dict()
+    input_item = received_data.model_dump()
     df = pd.DataFrame(input_item["data"])
     df.columns = df.columns.str.replace("_", "-")
     predictions = predict(df)
