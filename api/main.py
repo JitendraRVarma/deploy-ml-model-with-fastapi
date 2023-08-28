@@ -95,7 +95,7 @@ async def predict_data(received_data: Item):
     Returns:
         dict: Predicted salaries.
     """
-    input_item = received_data.model_dump()
+    input_item = received_data.dict()
     df = pd.DataFrame(input_item["data"])
     df.columns = df.columns.str.replace("_", "-")
     predictions = predict(df)
