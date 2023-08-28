@@ -20,7 +20,6 @@ import uvicorn
 from fastapi import Body, FastAPI
 from model.inference import predict
 from pydantic import BaseModel
-from typing_extensions import Annotated
 
 app = FastAPI()
 
