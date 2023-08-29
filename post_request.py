@@ -1,7 +1,7 @@
 import requests
 
 # Define the API endpoint URL
-api_url = "https://udacity-salary-predictor-fb9e03157e82.herokuapp.com/predict/"  # NOQA
+api_url = "https://udacity-salary-predictor-e0d91f043730.herokuapp.com/predict/"  # NOQA
 
 # Sample input data for model inference
 input_data = {
